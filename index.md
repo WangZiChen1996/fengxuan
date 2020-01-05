@@ -42,6 +42,8 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```
 姓名
 学历
+|:姓名：王子臣:|：学历：|性别|
+
 ```
 
 
