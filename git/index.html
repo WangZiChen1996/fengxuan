@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>笔记 - ZiChen</title>
+  <title>Git - ZiChen</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u7b14\u8bb0";
-    var mkdocs_page_input_path = "note.md";
+    var mkdocs_page_name = "Git";
+    var mkdocs_page_input_path = "git.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -58,12 +58,9 @@
     <a class="" href="../intro/">简历</a>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">笔记</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../note/">笔记</a>
 	    </li>
           
         </ul>
@@ -88,7 +85,7 @@
     
       
     
-    <li>笔记</li>
+    <li>Git</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -98,20 +95,22 @@
           <div role="main">
             <div class="section">
               
-                <ul>
-<li><a href="../git/">git使用方法</a></li>
-</ul>
+                <p>1.新建文件夹并初始化仓库<br />
+git init<br />
+2.接下来输入如下代码（关键步骤），把github上面的仓库克隆到本地<br />
+git clone https://github.com/WangZiChen1996/ANN.git<br />
+3.这个步骤以后你的本地项目文件夹下面就会多出个文件夹，该文件夹名即为你github上面的项目名，<br />
+如图我多出了个Test文件夹，我们把本地项目文件夹下的所有文件（除了新多出的那个文件夹不用），
+其余都复制到那个新多出的文件夹下，<br />
+4.接着继续输入命令 cd Test，进入Test文件夹<br />
+5.接下来依次输入以下代码即可完成其他剩余操作：<br />
+git add .        （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）<br />
+git commit  -m  ”提交信息”  （注：“提交信息”里面换成你需要，如“first commit”）<br />
+git push -u origin master   （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）  </p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="../intro/" class="btn btn-neutral" title="简历"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -134,8 +133,6 @@
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-      
-        <span><a href="../intro/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>
